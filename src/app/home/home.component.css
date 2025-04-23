@@ -1,0 +1,46 @@
+.projects-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 10px 20px 10px 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  margin: 20px 20px 20px 0;
+}
+
+.project-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.project-table th,
+.project-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.file-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.file-info img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.badge {
+  padding: 4px 10px;
+  border-radius: 20px;
+  background-color: #e0e7ff;
+  color: #4f46e5;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.table-scroll {
+  max-height: 325px;
+  overflow-y: auto;
+}

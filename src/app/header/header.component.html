@@ -1,0 +1,25 @@
+<div class="header-bar">
+  <span class="page-title">Dashboard</span>
+
+  <div class="user-dropdown-container" #dropdownRef>
+  <div class="user-dropdown" (click)="toggleDropdown()">
+    <img src="assets/user-profile.jpg" class="user-image" />
+    <div class="user-info">
+      <div class="user-name">{{ username() }}</div>
+      <div class="user-role">admin <span class="arrow">&#9662;</span></div>
+    </div>
+  </div>
+    <div class="dropdown-menu" *ngIf="showDropdown">
+      <ul>
+        <li><i class="icon">👤</i> My Profile</li>
+        <li><i class="icon">📥</i> Inbox</li>
+        <li><i class="icon">📋</i> Taskboard</li>
+        <li><i class="icon">⚙️</i> Settings</li>
+        <li (click)="logout()">
+          <i class="icon">🚪</i> Log Out
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</div>

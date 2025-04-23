@@ -1,0 +1,15 @@
+<div class="dashboard-layout">
+    <!-- Sidebar: Blue area with logo and menu -->
+    <div class="sidebar">
+      <app-logo></app-logo> <!-- Left blue logo area -->
+      <app-sidemenu></app-sidemenu> <!-- Menu items like Dashboard, File Manager -->
+    </div>
+  
+    <!-- Main content area -->
+    <div class="main-content">
+      <app-header></app-header> <!-- White top header showing "Dashboard" and username -->
+      <router-outlet></router-outlet> <!-- Your dashboard/home content -->
+      <app-footer></app-footer>
+    </div>
+  </div>
+  

@@ -1,0 +1,32 @@
+<div class="projects-card">
+  <h3>Projects</h3>
+
+  <table class="project-table">
+    <thead>
+      <tr>
+        <th><input type="checkbox" (change)="toggleAllSelection($event)" /></th>
+        <th>Files Name</th>
+        <th>File Type</th>
+        <th>Author</th>
+      </tr>
+    </thead>
+  </table>
+
+  <div class="table-scroll">
+    <table class="project-table">
+      <tbody>
+        <tr *ngFor="let post of posts">
+          <td><input type="checkbox" /></td>
+          <td>
+            <div class="file-info">
+              <img src="assets/file-type.jpg" alt="file icon" />
+              <span>{{ post.title }}</span>
+            </div>
+          </td>
+          <td><span class="badge">Document</span></td>
+          <td>John Doe</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

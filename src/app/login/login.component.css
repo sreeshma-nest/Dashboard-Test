@@ -1,0 +1,46 @@
+/* login.component.css */
+ 
+  .login-container {
+    display: flex; /*learn*/
+    flex-direction: column; /*learn*/
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #1f2f46; /*learn how to create constants for this*/
+    color: white;
+  }
+  
+  .logo {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: white;
+  }
+  
+  table {
+    border-collapse: separate;
+    border-spacing: 0 15px;
+  }
+  
+  input {
+    width: 250px;
+    padding: 10px;
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+  }
+  
+  input::placeholder {
+    color: #ccc;
+  }
+  
+  button {
+    width: 270px;
+    padding: 10px;
+    background-color: white;
+    color: #1f2f46;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+  }
+  
